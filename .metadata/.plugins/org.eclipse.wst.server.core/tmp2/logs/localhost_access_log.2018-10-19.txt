@@ -2,3 +2,7 @@
 0:0:0:0:0:0:0:1 - - [19/Oct/2018:09:17:37 +0530] "GET /booksandsubjectsmvchibernatedataboot/ HTTP/1.1" 404 1068
 0:0:0:0:0:0:0:1 - - [19/Oct/2018:09:18:22 +0530] "GET /booksandsubjectsmvchibernatedataboot/optionRedirect HTTP/1.1" 404 1096
 0:0:0:0:0:0:0:1 - - [19/Oct/2018:09:18:34 +0530] "GET /booksandsubjectsmvchibernatedataboot/optionRedirect.html HTTP/1.1" 404 1106
+127.0.0.1 - - [19/Oct/2018:09:25:28 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:09:25:30 +0530] "GET /booksandsubjectsmvchibernatedataboot/ HTTP/1.1" 404 1068
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:09:26:50 +0530] "GET /booksandsubjectsmvchibernatedataboot/optionRedirect.html HTTP/1.1" 404 1106
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:09:26:59 +0530] "GET /booksandsubjectsmvchibernatedataboot/optionRedirect HTTP/1.1" 404 1096
