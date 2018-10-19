@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %> 
+<%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Book Info</title>
+</head>
+<body>
+<c:if test="${empty book}">
+    Book not found !!!
+</c:if>
+<c:if test="${not empty book}">
+<table>
+<tr>
+	<td>Book ID</td>
+	<td>${book.bookId}</td>
+</tr>
+<tr>
+	<td>Title</td>
+	<td>${book.title}</td>
+</tr>
+<tr>
+	<td>Price</td>
+	<td>${book.price}</td>
+</tr>
+<tr>
+	<td>Volume</td>
+	<td>${book.volume}</td>
+</tr>
+<tr>
+	<td>Publish Date</td>
+	<td><tags:localDate date="${book.publishDate}"/></td>
+</tr>
+
+</table>
+</c:if>
+
+
+<form:form method="post" action="/booksandsubjectsmvchibernatedataboot/optionRedirect.html">      
+<input type="submit" value="Main Menu" />
+</form:form>
+
+</body>
+</html>
