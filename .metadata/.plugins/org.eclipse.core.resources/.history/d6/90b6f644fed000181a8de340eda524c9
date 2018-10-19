@@ -1,0 +1,71 @@
+package com.booksandsubjectsmvchibernatedataboot;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.ModelMap;
+
+@Service
+public class SubjectServiceImpl implements SubjectService 
+{
+	@Autowired
+	private SubjectDao subjectDao;
+	
+	
+	@Autowired
+	private BookDao bookDao;
+
+	@Override
+	public String addSubject(Subject subject,String bookIds) 
+	{
+		if(!bookIds.contains(","))
+		{
+			
+	        Book searchedBook=bookDao.searchBook(Long.parseLong(bookIds.trim()));
+			if(searchedBook!=null)
+        	{
+        		subject.getReference().add(searchedBook);
+        	}
+		}
+		else
+		{
+        String books[] = bookIds.split(",");
+	        for(String bookID : books)
+	        {
+	        	Book searchedBook=bookDao.searchBook(Long.parseLong(bookID.trim()));
+	        	if(searchedBook!=null)
+	        	{
+	        		subject.getReference().add(searchedBook);
+	        	}
+	        }
+		}
+		subjectDao.addSubject(subject);
+		return "subjectSuccess";
+	}
+
+	@Override
+	public String deleteSubject(long subjectId, ModelMap map) 
+	{
+		 Subject subject=subjectDao.searchSubject(subjectId);
+	        
+	        if(subject!=null)
+	        {
+	        	subjectDao.deleteSubject(subject.getSubjectId());
+	        	map.addAttribute("deleteStatus",'y');
+	        }
+	        else
+	        {
+	        	map.addAttribute("deleteStatus",'n');
+	        }
+			
+			return "deleteSubjectInfo";
+	}
+
+	@Override
+	public String searchSubject(long subjectId, ModelMap map)
+	{
+		Subject subject=subjectDao.searchSubject(subjectId);
+        System.out.println("subject->"+subject);
+		map.addAttribute("subject",subject);
+		return "subjectInfo";
+	}
+
+}

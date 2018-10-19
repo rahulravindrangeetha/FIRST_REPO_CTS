@@ -1,0 +1,31 @@
+package com.booksandsubjectssecurity;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.Embeddable;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
+
+@Embeddable
+public class EmbeddedIdObject implements Serializable
+{
+	 private String authority;
+	    private String username;
+		public String getAuthority() {
+			return authority;
+		}
+		public void setAuthority(String authority) {
+			this.authority = authority;
+		}
+		public String getUsername() {
+			return username;
+		}
+		public void setUsername(String username) {
+			this.username = username;
+		}
+		
+
+		
+
+}

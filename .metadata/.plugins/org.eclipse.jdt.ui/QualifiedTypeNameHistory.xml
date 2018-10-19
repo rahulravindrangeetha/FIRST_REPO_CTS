@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.BookService"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.SubjectService"/>
+<fullyQualifiedTypeName name="org.mockito.Mock"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="org.mockito.MockitoAnnotations"/>
+<fullyQualifiedTypeName name="org.junit.Test"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.Book"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="org.mockito.Matchers"/>
+<fullyQualifiedTypeName name="org.springframework.ui.ModelMap"/>
+<fullyQualifiedTypeName name="org.mockito.stubbing.OngoingStubbing"/>
+<fullyQualifiedTypeName name="org.mockito.Mockito"/>
+<fullyQualifiedTypeName name="org.mockito.InjectMocks"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.BookServiceImpl"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.Subject"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.SubjectServiceImpl"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.BookDaoImpl"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.BookDao"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.SubjectDaoImpl"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.SubjectDao"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.BookRepo"/>
+<fullyQualifiedTypeName name="com.booksandsubjectsmvchibernatedataboot.SubjectRepo"/>
+</qualifiedTypeNameHistroy>

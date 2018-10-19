@@ -1,0 +1,84 @@
+package test;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.ui.ModelMap;
+
+import static org.mockito.MockitoAnnotations.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.*;
+import static org.mockito.stubbing.OngoingStubbing.*;
+import static org.mockito.Mockito.*;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+import com.booksandsubjectsmvchibernatedataboot.Book;
+import com.booksandsubjectsmvchibernatedataboot.BookDao;
+import com.booksandsubjectsmvchibernatedataboot.BookService;
+import com.booksandsubjectsmvchibernatedataboot.BookServiceImpl;
+import com.booksandsubjectsmvchibernatedataboot.SubjectDao;
+import com.booksandsubjectsmvchibernatedataboot.SubjectService;
+
+public class ServiceTest 
+{
+	@InjectMocks
+	private BookService bookService=new BookServiceImpl();
+	
+	@Mock
+	private SubjectService subjectService;
+	
+	@Mock
+	private BookDao bookDao;
+	
+	@Mock
+	private SubjectDao subjectDao;
+	
+	
+	@Before
+	public void init()
+	{
+		initMocks(this);
+	}
+	
+	@Test
+	public void searchBookTest()
+	{
+		Book book= new Book();
+		book.setBookId(1);
+		book.setPrice(13.12);
+		book.setTitle("abc");
+		book.setPublishDate(LocalDate.parse("11-11-2011", DateTimeFormatter.ofPattern("dd-MM-yyyy")));
+		when(bookDao.searchBook(any(Long.class))).thenReturn(book);
+		String returnVal=bookService.searchBook(9,new ModelMap());
+		assertTrue(returnVal.equalsIgnoreCase("bookInfo"));
+		verify(bookDao).searchBook(any(Long.class));
+	
+	}
+	
+	@Test
+	public void addBookTest()
+	{
+		Book book= new Book();
+		book.setBookId(1);
+		book.setPrice(13.12);
+		book.setTitle("abc");
+		book.setPublishDate(LocalDate.parse("11-11-2011", DateTimeFormatter.ofPattern("dd-MM-yyyy")));
+		String returnVal=bookService.addBook(book);
+		assertTrue(returnVal.equalsIgnoreCase("bookSuccess"));
+		verify(bookDao).addBook(any(Book.class));
+	
+	}
+	
+	@Test
+	public void deleteBookTest()
+	{
+		String returnVal=bookService.deleteBook(9,new ModelMap());
+		assertTrue(returnVal.equalsIgnoreCase("bookInfo"));
+		verify(bookDao).deleteBook(any(Long.class));
+	
+	}
+
+}

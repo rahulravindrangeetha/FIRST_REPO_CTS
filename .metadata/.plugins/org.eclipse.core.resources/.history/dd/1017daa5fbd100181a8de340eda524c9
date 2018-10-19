@@ -1,0 +1,39 @@
+package test;
+
+import com.booksandsubjectsmvchibernatedataboot.BookDao;
+import com.booksandsubjectsmvchibernatedataboot.BookDaoImpl;
+import com.booksandsubjectsmvchibernatedataboot.SubjectDao;
+import com.booksandsubjectsmvchibernatedataboot.SubjectDaoImpl;
+
+import static org.junit.Assert.assertTrue;
+import static org.mockito.Matchers.any;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.mockito.MockitoAnnotations.initMocks;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.springframework.ui.ModelMap;
+
+
+public class DaoTest 
+{
+	@InjectMocks
+	private BookDao bookDao = new BookDaoImpl();
+	
+	@InjectMocks
+	private SubjectDao subjectDao = new SubjectDaoImpl();
+	
+	@Before
+	public void init()
+	{
+		initMocks(this);
+	}
+	
+
+}

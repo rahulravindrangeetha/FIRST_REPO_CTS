@@ -1,0 +1,23 @@
+package com.booksandsubjectsmvchibernatedataboot;
+
+public class SubjectDaoImpl implements SubjectDao {
+
+	@Override
+	public void addSubject(Book subject) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Book searchSubject(long subject) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteSubject(long subjectId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

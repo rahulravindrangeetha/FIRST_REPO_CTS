@@ -1,0 +1,4 @@
+127.0.0.1 - - [19/Oct/2018:09:17:36 +0530] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:09:17:37 +0530] "GET /booksandsubjectsmvchibernatedataboot/ HTTP/1.1" 404 1068
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:09:18:22 +0530] "GET /booksandsubjectsmvchibernatedataboot/optionRedirect HTTP/1.1" 404 1096
+0:0:0:0:0:0:0:1 - - [19/Oct/2018:09:18:34 +0530] "GET /booksandsubjectsmvchibernatedataboot/optionRedirect.html HTTP/1.1" 404 1106

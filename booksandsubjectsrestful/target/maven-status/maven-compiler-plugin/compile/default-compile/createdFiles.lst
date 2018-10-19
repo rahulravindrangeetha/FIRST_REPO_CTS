@@ -1,0 +1,10 @@
+com\booksandsubjectsmvcrestful\LocalDateDeserializer.class
+com\booksandsubjectsmvcrestful\Data.class
+com\booksandsubjectsmvcrestful\SomeIssueException.class
+com\booksandsubjectsmvcrestful\Subject.class
+com\booksandsubjectsmvcrestful\DateConvertor.class
+com\booksandsubjectsmvcrestful\BookNotFoundException.class
+com\booksandsubjectsmvcrestful\Book.class
+com\booksandsubjectsmvcrestful\BookRest.class
+com\booksandsubjectsmvcrestful\HibernateConnector.class
+com\booksandsubjectsmvcrestful\OptionRedirectController.class

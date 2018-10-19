@@ -1,0 +1,30 @@
+package com.booksandsubjectsmvchibernatedataboot;
+
+import org.springframework.ui.ModelMap;
+
+@Service
+public class BookServiceImpl implements BookService 
+{
+
+	@Override
+	public String addBook(Book book) 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteBook(long bookId, ModelMap map) 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String searchBook(long bookId, ModelMap map) 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

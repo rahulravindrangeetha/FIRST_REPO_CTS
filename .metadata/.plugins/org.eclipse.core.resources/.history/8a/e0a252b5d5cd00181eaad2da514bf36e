@@ -1,0 +1,13 @@
+package com.booksandsubjectssecurity;
+
+public class UserObject 
+{
+	private String username;
+	
+    private String password;
+    
+    private boolean enabled;
+    
+    private String authority;
+
+}

@@ -1,0 +1,13 @@
+com\booksandsubjectssecurity\EmbeddedIdObject.class
+com\booksandsubjectssecurity\OptionRedirectController.class
+com\booksandsubjectssecurity\UserObject.class
+com\booksandsubjectssecurity\Subject.class
+com\booksandsubjectssecurity\OptionRedirectController$1.class
+com\booksandsubjectssecurity\Authorities.class
+com\booksandsubjectssecurity\SecurityConfig.class
+com\booksandsubjectssecurity\HibernateConnector.class
+com\booksandsubjectssecurity\Data.class
+com\booksandsubjectssecurity\DateConvertor.class
+com\booksandsubjectssecurity\Book.class
+com\booksandsubjectssecurity\SpringSecurityInitializer.class
+com\booksandsubjectssecurity\Users.class

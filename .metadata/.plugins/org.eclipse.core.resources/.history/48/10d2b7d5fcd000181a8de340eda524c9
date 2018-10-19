@@ -1,0 +1,45 @@
+package com.booksandsubjectsmvchibernatedataboot;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.ModelMap;
+
+public class SubjectServiceImpl implements SubjectService 
+{
+	@Autowired
+	private SubjectDao subjectDao;
+
+	@Override
+	public String addSubject(Subject subject) 
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deleteSubject(long subjectId, ModelMap map) 
+	{
+		 Subject subject=subjectDao.searchSubject(subjectId);
+	        
+	        if(subject!=null)
+	        {
+	        	subjectDao.deleteSubject(subject);
+	        	map.addAttribute("deleteStatus",'y');
+	        }
+	        else
+	        {
+	        	map.addAttribute("deleteStatus",'n');
+	        }
+			
+			return "deleteSubjectInfo";
+	}
+
+	@Override
+	public String searchSubject(long subjectId, ModelMap map)
+	{
+		Subject subject=subjectDao.searchSubject(subjectId);
+        System.out.println("subject->"+subject);
+		map.addAttribute("subject",subject);
+		return "subjectInfo";
+	}
+
+}

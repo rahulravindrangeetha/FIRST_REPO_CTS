@@ -1,0 +1,5 @@
+package com.booksandsubjectssecurity;
+
+public class SpringSecurityInitializer {
+
+}

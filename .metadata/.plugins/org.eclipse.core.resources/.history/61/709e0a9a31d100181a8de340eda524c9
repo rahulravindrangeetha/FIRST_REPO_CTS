@@ -1,0 +1,46 @@
+package test;
+
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mock;
+import static org.mockito.MockitoAnnotations.*;
+
+import com.booksandsubjectsmvchibernatedataboot.Book;
+import com.booksandsubjectsmvchibernatedataboot.BookDao;
+import com.booksandsubjectsmvchibernatedataboot.BookService;
+import com.booksandsubjectsmvchibernatedataboot.SubjectDao;
+import com.booksandsubjectsmvchibernatedataboot.SubjectService;
+
+public class ServiceTest 
+{
+	@Mock
+	private BookService bookService;
+	
+	@Mock
+	private SubjectService subjectService;
+	
+	@Mock
+	private BookDao bookDao;
+	
+	@Mock
+	private SubjectDao subjectDao;
+	
+	
+	@Before
+	public void init()
+	{
+		initMocks(this);
+	}
+	
+	@Test
+	public void searchBookTest()
+	{
+		Book book= new Book();
+		book.setBookId(1);
+		book.setPrice(13.12);
+		book.setTitle("abc");
+		when(bookService.searchBook(any(String.class), any(ModelMap.class)).thenReturn();
+		
+	}
+
+}

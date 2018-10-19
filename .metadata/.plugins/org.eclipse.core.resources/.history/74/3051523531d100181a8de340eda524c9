@@ -1,0 +1,24 @@
+package test;
+
+import org.junit.Before;
+import org.mockito.Mock;
+import static org.mockito.MockitoAnnotations.*;
+import com.booksandsubjectsmvchibernatedataboot.BookService;
+import com.booksandsubjectsmvchibernatedataboot.SubjectService;
+
+public class ServiceTest 
+{
+	@Mock
+	private BookService bookService;
+	
+	@Mock
+	private SubjectService subjectService;
+	
+	
+	@Before
+	public void init()
+	{
+		initMocks(this);
+	}
+
+}
