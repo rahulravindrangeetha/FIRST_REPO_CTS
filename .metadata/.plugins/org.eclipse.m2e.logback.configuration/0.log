@@ -4023,3 +4023,13 @@ Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to download.ecl
 2018-10-19 09:15:09,585 [Worker-1193] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2018-10-19 09:15:09,585 [Worker-1193] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\eclipse-workspace\booksandsubjectsmvchibernatedataboot\src\test\resources
 2018-10-19 09:21:58,015 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2018-10-19 11:02:16,657 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-19 11:02:16,688 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2018-10-19 11:02:16,704 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 14 resources
+2018-10-19 11:02:16,907 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-19 11:02:16,907 [Worker-48] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\eclipse-workspace\booksandsubjectsmvchibernatedataboot\src\test\resources
+2018-10-19 11:02:25,892 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-19 11:02:25,930 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-19 11:02:25,931 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-10-19 11:02:25,935 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-19 11:02:25,936 [Worker-54] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Admin\eclipse-workspace\booksandsubjectsmvchibernatedataboot\src\test\resources
